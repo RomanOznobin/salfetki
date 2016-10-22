@@ -60,6 +60,7 @@
 
 .widget-area  .widget .element {
 	color: #666;
+    cursor: pointer;
 }
 
 .description ul,

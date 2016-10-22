@@ -125,8 +125,13 @@ class stainedglass_items extends WP_Widget {
 					for( $i = 0; $i < $instance['count']; $i++) {
 					?>
 					
-						<div class="element <?php echo esc_attr($instance['effect_id']).( $instance['is_animate_once'] ? ' once' : '' ).( $instance['is_animate'] ? ' animate' : '' ).( $instance['is_zoom'] ? ' zoom' : '' );?>">
+                    
+						<div class="element <?php echo esc_attr($instance['effect_id']).( $instance['is_animate_once'] ? ' once' : '' ).( $instance['is_animate'] ? ' animate' : '' ).( $instance['is_zoom'] ? ' zoom' : '' );?>"
+                                                onclick="location.href='<?php echo esc_url($instance['link_'.$i]); ?>';">
 							<article>
+                            
+                            
+                            
 								<?php if( isset($instance['image_link_'.$i]) ) : 
 									
 									if( 1 == $instance['is_background'] ) :  ?>
@@ -144,8 +149,10 @@ class stainedglass_items extends WP_Widget {
 									<?php echo wp_get_attachment_image($instance['image_'.$i], $instance['image_size']); ?>
 								
 								<?php endif; ?>
-							
+                                
+                            
 								<div class="hover">
+                                
 								
 									<header>
 										<h2 class="entry-title"><?php echo esc_html( $instance['title_'.$i]);?></h2>
@@ -156,16 +163,28 @@ class stainedglass_items extends WP_Widget {
 									<?php if ( '' != $instance['is_link_'.$i] ) : ?>
 									<a href="<?php echo esc_url($instance['link_'.$i]); ?>" class="link"><?php echo esc_html( $instance['link_caption_'.$i]); ?></a>
 									<?php endif; ?>
+                                    
+                                    
 									
 								</div><!-- .hover -->
+
 								
 							</article>
 						</div><!-- .element -->
+                        
+
+                        
+                        
 					<?php } ?>
 		
 					<div class="clear"></div>
 			</div><!-- .wrapper -->
+            
+            
+            
 			<div class="hide-element"></div>
+            
+            
 		</div><!-- .main-wrapper -->
 		<?php
 		echo $after_widget;

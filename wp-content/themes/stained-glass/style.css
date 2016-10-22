@@ -216,6 +216,15 @@ q {
 	quotes: none;
 }
 
+.load-praise{
+    font-size: 22px;
+}
+
+.sales {
+    color: rgb(0, 0, 128);
+    font-size: 20px;
+}
+
 blockquote:before,
 blockquote:after,
 q:before,
@@ -858,6 +867,7 @@ div.wp-caption.alignright .wp-caption-text {
 
 .header-image {
 	margin: 0 auto;
+    border: 2px solid #cba608;
 }
 
 .element-wrap {
@@ -2575,8 +2585,8 @@ div.wp-caption.alignright .wp-caption-text {
 	
 	.horisontal-navigation li ul li a {
 		display: block;
-		padding: 5px 10px;
-		width: 180px;
+		padding: 10px 10px;
+		width: 230px;
 		white-space: normal;
 	}
 
@@ -2609,7 +2619,7 @@ div.wp-caption.alignright .wp-caption-text {
 		text-align: right;
 	}
 	.widget {
-		font-size: 14px;
+		font-size: 18px;
 		line-height: 1.5;
 	}
 	
@@ -3142,12 +3152,12 @@ div.wp-caption.alignright .wp-caption-text {
 }
 
 .top-navigation .horisontal-navigation li ul li a {
-	color: #aaa;
+	color: #cba608;
 }
 .top-navigation .horisontal-navigation li a:hover,
 .top-navigation .horisontal-navigation li a:focus {
 	background: #f4f4f4; 
-	color: #bfbfbf; 
+	color: #dba600; 
 }
 .top-navigation .horisontal-navigation li ul li a:hover,
 .horisontal-navigation li ul li a:focus {
@@ -3290,7 +3300,7 @@ td,
 .sidebar-top-full .widget .widgettitle,
 .sidebar-top-full .widget .widget-title {
 	background: rgba(255,255,255,1);
-	color: #676c72;
+	color: #1e2023;
 }
 
 /* Before Footer Sidebar */

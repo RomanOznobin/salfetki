@@ -120,8 +120,10 @@ class stainedglass_image extends WP_Widget {
 				
 				<?php 	
 					for( $i = 0; $i < $instance['count']; $i++ ) {
-					?>
-					
+				
+                    ?>
+					   
+                       
 						<div class="element <?php echo esc_attr( $instance['effect_id_'.$i]).( $instance['is_animate_once_'.$i] ? ' once' : '' ).( $instance['is_animate_'.$i] ? ' animate' : '' ).( $instance['is_zoom_'.$i] ? ' zoom' : '' );?>">
 							<article>
 								<?php if( isset( $instance['image_link_'.$i] ) ) : 
@@ -141,11 +143,20 @@ class stainedglass_image extends WP_Widget {
 									<?php echo wp_get_attachment_image($instance['image_'.$i], $instance['image_size']); ?>
 								
 								<?php endif; ?>
+
 							
 								<div class="hover">
 								
 									<header>
+                                    
+                       <!-- Roman. Do div to a link -->
+                      <a href="<?php echo esc_url($instance['link_'.$i]); ?>" class="link">
+                                   
 										<h2 class="entry-title"><?php echo esc_html( $instance['title_'.$i]);?></h2>
+
+                       <!-- Roman. Finish the link on div --> 
+                            </a>
+
 									</header><!-- header -->
 									
 									<p><?php echo wp_kses( $instance['text_'.$i], $tags );?></p>
@@ -155,10 +166,14 @@ class stainedglass_image extends WP_Widget {
 									<?php endif; ?>
 									
 								</div><!-- .hover -->
+                                
+                                
 								
 							</article>
 						</div><!-- .element -->
 							
+                            
+                            
 					<?php } ?>
 		
 					<div class="clear"></div>

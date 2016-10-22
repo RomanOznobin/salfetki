@@ -20,8 +20,37 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width">
+    <meta name="yandex-verification" content="29115174174fa6c7" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php wp_head(); ?>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter39242000 = new Ya.Metrika({
+                    id:39242000,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/39242000" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 </head>
 
 <body <?php body_class(); ?>>
@@ -38,12 +67,17 @@
 								<a class="logo-section" href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'>
 									<img src='<?php echo esc_url( stainedglass_get_theme_mod( 'logotype_url' ) ); ?>' class="logo" alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'>
 								</a><!-- .logo-section -->
+
+
 							</div><!-- .logo-block -->
 						<?php endif; ?>
-						
+				
 						<div class="menu-top">
+
 							<!-- First Top Menu -->		
-							<div class="nav-container top-1-navigation">						
+							<div class="nav-container top-1-navigation">				
+	
+		
 								<?php if ( stainedglass_get_theme_mod( 'is_show_top_menu' ) == '1' ) : ?>
 									<nav class="horisontal-navigation menu-1" role="navigation">
 										<span class="toggle"><span class="menu-toggle"></span></span>
@@ -57,6 +91,9 @@
 							<?php if ( '1' == stainedglass_get_theme_mod( 'is_show_secont_top_menu') ) : ?>
 
 								<div class="nav-container top-navigation">
+
+<span style="margin-left: 200px; margin-top: 16px; float: left; color: blue;">тел: 8-(8342)-30-28-08; e-mail: salfetka-rm@mail.ru;</span>
+
 									<nav class="horisontal-navigation menu-2" role="navigation">
 										<span class="toggle"><span class="menu-toggle"></span></span>
 										<?php wp_nav_menu( array( 'theme_location' => 'top2', 'menu_class' => 'nav-horizontal' ) ); ?>

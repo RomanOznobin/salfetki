@@ -164,7 +164,8 @@ class stainedglass_product extends WP_Widget {
 								<div class="hover">
 								
 									<header>
-									
+                                    
+							
 									<?php the_title( '<h2><a class="entry-title" href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' ); ?>
 									<?php woocommerce_get_template( 'loop/rating.php' ); ?>
 
